@@ -6,6 +6,10 @@ const router = express.Router();
 router.get('/', (req, res) => {
     res.send('Client page')
 })
+router.get('/new', (req, res) => {
+    res.render('formClient')
+})
+
 router.get('/welcome', (req, res) => {
     res.send('Client page Welcome')
 })

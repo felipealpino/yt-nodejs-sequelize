@@ -1,0 +1,7 @@
+{{> main}}
+
+<div class="body-content">
+    <h2>Welcome to home page, {{nome}}</h2>
+
+    <a href="/client/new">Click here to add a new client</a>
+</div>
