@@ -8,10 +8,20 @@ const fs = require('fs')
 //     }
 // })
 
-fs.readFile('myFile.txt', (err, data) => { 
+// fs.readFile('myFile.txt', (err, data) => { 
+//     try{
+//         console.log(data.toString('utf-8'))
+//     } catch(error) {
+//         console.log("Ocorreu algum error não esperado")
+//     }
+// })
+
+fs.readdir('./', (err, files) => {
     try{
-        console.log(data.toString('utf-8'))
-    } catch(error) {
-        console.log("Ocorreu algum error não esperado")
+        files.forEach(file => {
+            console.log(file)
+        })
+    } catch(err) {
+        console.log("Algum erro inesperado")
     }
 })
