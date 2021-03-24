@@ -1,3 +1,6 @@
 npm init 
     package name: init-node
     "main": "app.js" (criar arquivo)
+
+→ npm install express --save
+→ npm install nodemon --save-dev
