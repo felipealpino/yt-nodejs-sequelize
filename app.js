@@ -5,6 +5,8 @@ const clients = require('./router/client')
 //ROTAS -- Configurações de endpoints
 const app = express();
 
+app.use('/assets', express.static('./assets'))
+
 app.use(express.json()) //body-parser (old library)
 app.use(express.urlencoded({extended:true}))
 
