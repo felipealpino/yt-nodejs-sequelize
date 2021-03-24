@@ -1,0 +1,24 @@
+O que é NODEJS:
+→ NodeJs NÃO é uma lingagem de programação
+→ NodeJs NÃO é um framework (Prototype, JQuery, React, Angular, Vuejs)
+→ NodeJs É mais voltado para uma plataforma.
+É uma tecnologia assíncrona mono thread não bloqueante. 
+A thread nao espera a conclusão de uma req para efetuar a proxima (é por isso que temos que dar async await na conexão com o database)
+Vantagens:
+    NodeJs usa JavaScript
+    Possibilidade de trabalhar com JavaScript fullstack
+    É leve e multiplataforma
+    Comunidade grande
+Serve muito bem para:
+    Desenvolver API'
+    Desenvolver backend de jogos e apps de troca de mensagens
+    Desenvolver aplicações em tempo real
+O que usamos com NodeJs:
+    Express - framework - trás recursos de rota, template, ORM, arquitetura de aplicação, 
+    Mongoose - ORM MongoDB - Object–relational mapping (Mapeamento objeto-relacional)
+    EJS, PUG -- linguagens de template (template engine)
+    Socket.io - Para aplicações real time (tecnologia nao é abordada no curso)
+    Passport - Autenticações (desenvolver autenticação de APIs, token, OAuth, OAuth2, autenticação HTTP, HTTPS)
+
+
+

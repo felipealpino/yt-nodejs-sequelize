@@ -1,0 +1,3 @@
+npm init 
+    package name: init-node
+    "main": "app.js" (criar arquivo)
