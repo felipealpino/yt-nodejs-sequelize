@@ -1,10 +1,5 @@
 const express = require('express')
-
-//Rotas 
-const router = express.Router();
-router.get('/', (req,res) => {
-    res.send('Hello World!')
-})
+const router = require('./router/index')
 
 //Configurações
 const app = express();
