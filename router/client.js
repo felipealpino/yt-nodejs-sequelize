@@ -33,9 +33,15 @@ router.get('/edit/:id', async (req, res) => {
     const dados = await Client.findAll({
         where: {id:req.params.id}
     })
-    console.log(dados)
-    
     res.render('editFormClient', {dados:dados})
+})
+router.post('/edit/:id', async(req,res) => {
+    const dados = await Client.update(req.body, {
+        where: {id: req.params.id}
+    });
+
+    console.log("Client data updated successfully !! ;)")
+    res.redirect('/client/list')
 })
 
 
