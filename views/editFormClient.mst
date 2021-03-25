@@ -5,7 +5,7 @@
         <a href="/">Return to home</a>
         <h1>Edit client</h1>
     </nav>
-
+    {{#dados}}
     <div class="main-container">
         <form action="" method="POST">
             <label for="">Cliente</label>
@@ -24,7 +24,7 @@
             <input type="text" name="contato" placeholder="Digite o contato" value="{{contato}}">
 
             <input type="submit" value="Editar cliente">
-
         </form>
     </div>
+    {{/dados}}
 </div>

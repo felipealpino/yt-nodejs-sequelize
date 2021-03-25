@@ -24,6 +24,7 @@ router.post('/new', async (req, res) => {
 
 router.get('/list', async (req,res) => {
     const dados = await Client.findAll()
+    console.log(dados)
     res.render('listClients', {dados:dados})
 })
 
@@ -31,7 +32,9 @@ router.get('/list', async (req,res) => {
 router.get('/edit/:id', async (req, res) => {
     const dados = await Client.findAll({
         where: {id:req.params.id}
-    });
+    })
+    console.log(dados)
+    
     res.render('editFormClient', {dados:dados})
 })
 
