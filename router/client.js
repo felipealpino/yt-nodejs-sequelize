@@ -4,27 +4,50 @@ const db = require('../models')
 const {Client} = require('../models')
 const router = express.Router();
 
-//onde '/' é do prefix /clients
-router.get('/', (req, res) => {
-    res.send('Client page')
+//onde '/client/' é do prefix /clients
+
+/**
+ * API CONTROL  
+*/ 
+router.get('/', async (req, res) => {
+    const dados = await Client.findAll()
+    res.send(dados)
+})
+router.get('/:id', async (req, res) => {
+    const dados = await Client.findAll({
+        where: {id:req.params.id}
+    })
+    res.send(dados);
+})
+router.post('/', async(req, res) => {
+    const dados = await Client.create(req.body)
+    res.send(dados);
+})
+router.delete('/:id', async(req, res) => {
+    const dados = Client.destroy({
+        where: {
+            id: req.params.id
+        }
+    })
 })
 
 
+
+/**
+ * CRUD CONTROL
+ */
 router.get('/new', (req, res) => {
     res.render('formClient')
 })
 router.post('/new', async (req, res) => {
-    console.log(req.body)
     const dados = await Client.create(req.body)
-    // console.log(dados)
     console.log('User successfully added !!')
-    res.redirect('/')
+    res.redirect('/client/list')
 })
 
 
 router.get('/list', async (req,res) => {
     const dados = await Client.findAll()
-    console.log(dados)
     res.render('listClients', {dados:dados})
 })
 
