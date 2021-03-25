@@ -18,7 +18,7 @@
             <label for="email">Email</label>
             <input type="email" name="email" placeholder="Digite o email">
             
-            <label for="contato">Cnpj</label>
+            <label for="contato">Contato</label>
             <input type="text" name="contato" placeholder="Digite o contato">
 
             <input type="submit" value="Enviar dados">
