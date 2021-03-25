@@ -13,8 +13,8 @@ router.get('/new', (req, res) => {
 })
 router.post('/new', (req, res) => {
     console.log(req.body)
-    console.log(Client)
-    Client.build(req.body)
+    const dados = Client.create(req.body)
+    console.log(dados)
     console.log('User successfully added !!')
     res.redirect('/')
 })
