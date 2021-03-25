@@ -4,4 +4,6 @@
     <h2>Welcome to home page, {{nome}}</h2>
 
     <a href="/client/new">Click here to add a new client</a>
+    <a href="/client/list">Click here to list all clients</a>
+    
 </div>

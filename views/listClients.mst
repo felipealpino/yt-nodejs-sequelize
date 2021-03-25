@@ -1,0 +1,37 @@
+{{> main}}
+
+<div class="body-content" style="justify-content: start;">
+    
+    
+    <nav class="main-nav">
+        <a href="/">Return to home</a>
+    </nav>
+
+    <table class="table table-hover container-md">
+        <thead>
+          <tr>
+            <th scope="col">Cliente</th>
+            <th scope="col">CNPJ</th>
+            <th scope="col">Telefone</th>
+            <th scope="col">Email</th>
+            <th scope="col">Contato</th>
+            <th scope="col">Opções</th>
+          </tr>
+        </thead>
+        <tbody>
+        {{#dados}}
+          <tr>
+            <td>{{cliente}}</td>
+            <td>{{cnpj}}</td>
+            <td>{{telefone}}</td>
+            <td>{{email}}</td>
+            <td>{{contato}}</td>
+            <td scope="col">
+                <a href="/edit/{{id}}">[Editar]</a>
+                <a href="/delete/{{id}}">[Deletar]</a>
+            </td>
+          </tr>
+        {{/dados}}
+        </tbody>
+      </table>
+</div>
