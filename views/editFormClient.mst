@@ -1,0 +1,30 @@
+{{> main}}
+
+<div class="body-content">
+    <nav class="main-nav">
+        <a href="/">Return to home</a>
+        <h1>Edit client</h1>
+    </nav>
+
+    <div class="main-container">
+        <form action="" method="POST">
+            <label for="">Cliente</label>
+            <input type="text" name="cliente" placeholder="Digite nome do cliente" value="{{cliente}}">
+
+            <label for="cnpj">Cnpj</label>
+            <input type="text" name="cnpj" placeholder="Digite o CNPJ" value="{{cnpj}}">
+
+            <label for="telefone">Telefone</label>
+            <input type="text" name="telefone" placeholder="Digite o telefone" value="{{telefone}}">
+            
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Digite o email" value="{{email}}">
+            
+            <label for="contato">Contato</label>
+            <input type="text" name="contato" placeholder="Digite o contato" value="{{contato}}">
+
+            <input type="submit" value="Editar cliente">
+
+        </form>
+    </div>
+</div>

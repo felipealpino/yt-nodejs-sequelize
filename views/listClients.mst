@@ -5,6 +5,7 @@
     
     <nav class="main-nav">
         <a href="/">Return to home</a>
+        <a href="/client/new">Add a new client</a>
     </nav>
 
     <table class="table table-hover container-md">
@@ -27,8 +28,8 @@
             <td>{{email}}</td>
             <td>{{contato}}</td>
             <td scope="col">
-                <a href="/edit/{{id}}">[Editar]</a>
-                <a href="/delete/{{id}}">[Deletar]</a>
+                <a href="/client/edit/{{id}}">[Editar]</a>
+                <a href="/client/delete/{{id}}">[Deletar]</a>
             </td>
           </tr>
         {{/dados}}
